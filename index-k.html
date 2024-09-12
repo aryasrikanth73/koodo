@@ -162,14 +162,6 @@
                                             <h1>Empowering Student Knowledge</h1>
                                             <p>The significance of early childhood education in India has surged, particularly following the implementation of the new National Education Policy.</p>
 
-                                            <div class="banner-btn">
-                                                <a href="#" class="default-btn">
-                                                    Learn More
-                                                </a>
-                                                <!-- <a href="#" class="optional-btn">
-                                                    Find Out More
-                                                </a> -->
-                                            </div>
                                         </div>
                                     </div>
 
@@ -194,14 +186,6 @@
                                             <h1>Tailored Learning, Infinite Potential</h1>
                                             <p>Micro Schools are revolutionizing education by offering personalized learning experiences in small, close-knit environments. This approach ensures that each child's unique needs and strengths are nurtured, providing a solid foundation for lifelong success.</p>
 
-                                            <div class="banner-btn">
-                                                <a href="#" class="default-btn">
-                                                    Learn More
-                                                </a>
-                                                <!-- <a href="#" class="optional-btn">
-                                                    Find Out More
-                                                </a> -->
-                                            </div>
                                         </div>
                                     </div>
 
@@ -226,15 +210,6 @@
                                         <h1>Partner with Us, Shape the Future</h1>
                                         <p>Join hands with us to build a community of future-ready learners. Our franchise model offers a unique opportunity to contribute to the educational landscape by bringing innovative and high-quality learning experiences to children in your area. Together, let's create a lasting impact on the leaders of tomorrow.<p>                                   
 
-
-                                            <div class="banner-btn">
-                                                <a href="#" class="default-btn">
-                                                    Learn More
-                                                </a>
-                                                <!-- <a href="#" class="optional-btn">
-                                                    Find Out More
-                                                </a> -->
-                                            </div>
                                         </div>
                                     </div>
 
@@ -360,7 +335,7 @@
         cursor: pointer;
         position: relative;
         overflow: hidden;
-        border: #4E2383 solid 1px;
+        border: #4E2383 solid 3px;
     }
     
     .feature-box:hover {
@@ -466,12 +441,18 @@
             opacity: 1;
         }
     }
-    
+    /* Hide <p> in mobile and tablet view */
+@media (max-width: 991px) { /* Targets screens below 991px (tablet and mobile) */
+    .main-banner-content .banner-btn, .main-banner-content p  {
+        display: none;
+    }
+}
+
         </style>
         <section class="features-area py-5">
             <div class="container">
                 <div class="section-title text-center mb-5">
-                    <h2>Our Features</h2>
+                    <h3>Our Features</h3>
                     <p>Discover the unique aspects that make Koodo Pre School stand out.</p>
                 </div>
                 <div class="row">
@@ -547,7 +528,7 @@
             <div class="container">
                 <div class="section-title">
                     <!-- <span>Our Programs</span> -->
-                    <h2>Discover Our Enriching Preschool Programs</h2>
+                    <h3>Discover Our Enriching Preschool Programs</h3>
                 </div>
 
                 <div class="row">
@@ -670,7 +651,7 @@
             <div class="container">
                 <div class="section-title">
                     <!-- <span>Our Core Values</span> -->
-                    <h2>Best Facilities For Kids</h2>
+                    <h3>Best Facilities For Kids</h3>
                 </div>
 
                 <div class="row align-items-center">
@@ -765,7 +746,7 @@
             <div class="container-fluid">
                 <div class="section-title">
                     <span>Events</span>
-                    <h2>Preschool Programs</h2>
+                    <h3>Preschool Programs</h3>
                 </div>
 
                 <div class="row">
@@ -902,7 +883,7 @@
           <section class="testimonials-area bg-color ptb-100">
             <div class="container">
                 <div class="section-title">
-                    <h2>What Parents Say About Us</h2>
+                    <h3>What Parents Say About Us</h3>
                 </div>
         
                 <div class="testimonials-slides owl-carousel owl-theme">
@@ -971,7 +952,7 @@
             <div class="container">
                 <div class="section-title">
                     <span>News and Blog</span>
-                    <h2>Latest News</h2>
+                    <h3>Latest News</h3>
                 </div>
 
                 <div class="row">
