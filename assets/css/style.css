@@ -1582,7 +1582,7 @@ Who We Are Area CSS
 }
 
 .who-we-are-content p {
-  margin-bottom: 0;
+  margin-bottom: 10;
 }
 
 .who-we-are-content .who-we-are-list {
@@ -3210,6 +3210,7 @@ Newsletter Area CSS
 .newsletter-content h2 {
   font-size: 35px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .newsletter-form {
