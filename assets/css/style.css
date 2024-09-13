@@ -6209,7 +6209,7 @@ Go Top CSS
 .go-top.active {
   opacity: 1;
   visibility: visible;
-  bottom: 40px;
+  bottom: 50px;
   right: 25px;
 }
 
