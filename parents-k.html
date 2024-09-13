@@ -32,6 +32,8 @@
         <link rel="icon" type="image/png" href="assets/img/koodo-logo.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Martel+Sans:400,200,300,600,700,800,900|Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -40,7 +42,7 @@
         }
         /* Banner Section */
         .banner {
-            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            background: url('assets/img/page-banner-5.jpg') no-repeat center center/cover;
             height: 350px;
             display: flex;
             justify-content: center;
@@ -124,6 +126,50 @@
 
     <body>
         
+<!-- WhatsApp Icon -->
+<div id="whatsapp-widget">
+    <a href="https://wa.me/917337509737" target="_blank" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  
+  <!-- Social Media Widget -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('social-toggle').addEventListener('click', function() {
+          const socialIcons = document.querySelectorAll('#social-media-widget .social-icon:not(#social-toggle)');
+          socialIcons.forEach(icon => {
+              if (icon.style.display === 'none' || icon.style.display === '') {
+                  icon.style.display = 'flex';
+              } else {
+                  icon.style.display = 'none';
+              }
+          });
+      });
+  });
+  
+  </script>
+  <!-- Social Media Widget -->
+  <div id="social-media-widget">
+    <div id="social-toggle" class="social-icon">
+        <i class="fas fa-link"></i>
+        <!-- <i class="fas fa-hand-pointer-o"></i> -->
+        <!-- <img src="images/logo/social-media-icon.png" alt="Social Icon" class="social-img"> -->
+    </div>
+    <a href="https://m.facebook.com/" target="_blank" class="social-icon facebook" style="display:none;">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <!-- <a href="#" class="social-icon twitter" style="display:none;">
+        <i class="fab fa-twitter"></i>
+    </a> -->
+    <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram" style="display:none;">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://m.youtube.com/" target="_blank" class="social-icon linkedin" style="display:none;">
+        <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+
         <!-- Start Preloader Area -->
         <div class="preloader">
             <div class="loader">
@@ -143,9 +189,9 @@
                 <div class="container">
                     <div class="main-responsive-menu">
                         <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/img/logojersey.png" class="black-logo" alt="image">
-                                <img src="assets/img/logojersey.png" class="white-logo" alt="image">
+                            <a href="index-k.html">
+                                <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" >
+                                <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" >
                             </a>
                         </div>
                     </div>
@@ -156,8 +202,8 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index-k.html">
-                            <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" Style="max-width: 150px;height: auto;">
-                            <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" Style="max-width: 150px;height: auto;">
+                            <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" Style="max-width: 200px;height: auto;">
+                            <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" Style="max-width: 200px;height: auto;">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -207,7 +253,7 @@
                 </div>
             </div>
 
-            <div class="others-option-for-responsive">
+            <!-- <div class="others-option-for-responsive">
                 <div class="container">
                     <div class="dot-menu">
                         <div class="inner">
@@ -227,7 +273,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- End Navbar Area -->
 
@@ -242,57 +288,88 @@
     <h1 class="animate__animated animate__fadeInDown">Parent Partnerships</h1>
 </section>
 
-<!-- Parent Partnerships Section -->
+<!-- CSS for image size -->
+<style>
+    .section-img {
+        width: 100%; /* Adjusts to container width */
+        max-width: 500px; /* Limit maximum width */
+        height: auto; /* Maintain aspect ratio */
+    }
+</style>
+
+<!-- Working in Partnership Section -->
 <section class="content-section animate-box">
     <div class="container">
-        <h2>Working in Partnership with You</h2>
-        <img src="https://via.placeholder.com/1200x400" alt="Partnership Image" class="section-img">
-        <p>We believe in open communication and collaboration with parents, making you an integral part of your child’s educational journey.</p>
-        <p>We work with parents to ensure each individual child has the most effective learning experience. Sharing information with you gives peace of mind knowing that whilst apart, your child is safe, happy, and receiving a solid foundation for their education.</p>
-        <p>As parents, you are your child’s first teacher, and the success of our curriculum is dependent on a close relationship between us, as teachers, and you as parents. We are proud to have strong positive links with children and families.</p>
+        <div class="section-title text-center mb-5">
+            <h3>Working in Partnership with You</h3>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-1 order-lg-1">
+                <img src="https://via.placeholder.com/1200x400" alt="Partnership Image" class="section-img">
+            </div>
+            <div class="col-lg-6 order-2 order-lg-2">
+                <p>We believe in open communication and collaboration with parents, making you an integral part of your child’s educational journey.</p>
+                <p>We work with parents to ensure each individual child has the most effective learning experience. Sharing information with you gives peace of mind knowing that whilst apart, your child is safe, happy, and receiving a solid foundation for their education.</p>
+                <p>As parents, you are your child’s first teacher, and the success of our curriculum is dependent on a close relationship between us, as teachers, and you as parents. We are proud to have strong positive links with children and families.</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Staying Connected Section -->
 <section class="content-section animate-box">
     <div class="container">
-        <h2>Staying Connected</h2>
-        <img src="https://via.placeholder.com/1200x400" alt="Staying Connected Image" class="section-img">
-        <p>Through our Preschool App, we send updates and share diary timelines of your child’s activities at nursery so that you can cherish those golden moments.</p>
-        <p>All our parents are given many opportunities to attend coffee mornings, social events, and various workshops such as language and behaviour management, giving you the guidance to help you support your child in the best possible way.</p>
+        <div class="section-title text-center mb-5">
+            <h3>Staying Connected</h3>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <p>Through our Preschool App, we send updates and share diary timelines of your child’s activities at nursery so that you can cherish those golden moments.</p>
+                <p>All our parents are given many opportunities to attend coffee mornings, social events, and various workshops such as language and behaviour management, giving you the guidance to help you support your child in the best possible way.</p>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <img src="https://via.placeholder.com/1200x400" alt="Staying Connected Image" class="section-img">
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Parent In Class Section -->
 <section class="content-section animate-box">
     <div class="container">
-        <h2>Parent In Class</h2>
-        <img src="https://via.placeholder.com/1200x400" alt="Parent In Class Image" class="section-img">
-        <p>At New Jersey, we acknowledge and appreciate that parents come with unique talents and skills that can be beneficial to children’s learning in and out of the classroom. Hence, we create engagement opportunities for parents to join us in the classroom, inviting them to have first-hand experience in the various ways that children learn, explore the world, and express themselves.</p>
-        <p>Through activities from simple storytelling to puppetry sessions, cooking demonstrations, show-and-tells, or even just lending some muscle in a playhouse project, these are but some ways that parents in class contribute a different perspective, voice, and experience for the children.</p>
-        <p>From the eyes of the children, seeing their parents involved in their classroom fills them with pride and appreciation for learning and the world. That is the ideal situation for learning, growing, and bonding culture we practice in New Jersey Preschool.</p>
+        <div class="section-title text-center mb-5">
+            <h3>Parent In Class</h3>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-1 order-lg-1">
+                <img src="https://via.placeholder.com/1200x400" alt="Parent In Class Image" class="section-img">
+            </div>
+            <div class="col-lg-6 order-2 order-lg-2">
+                <p>At New Jersey, we acknowledge and appreciate that parents come with unique talents and skills that can be beneficial to children’s learning in and out of the classroom.</p>
+                <p>Through activities from simple storytelling to puppetry sessions, cooking demonstrations, or show-and-tells, parents contribute to the learning experience in various meaningful ways.</p>
+                <p>Seeing parents involved in the classroom fills children with pride and appreciation for learning and the world. This supports an ideal environment for growth and bonding.</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Preschool Board of Parents Section -->
 <section class="content-section animate-box">
     <div class="container">
-        <h2>Preschool Board of Parents</h2>
-        <img src="https://via.placeholder.com/1200x400" alt="Preschool Board Image" class="section-img">
-        <p>The New Jersey Preschool Board of Parents is an active body of (usually five) elected parent representatives. They make policy decisions about every important aspect of our pre-school’s life. Board members agree the level of activities fees, budget and spending, discuss program activities and the curriculum. They help organize parent social events so our community members can spend time together, make useful connections and friends.</p>
-        <p>Board members are elected by all parents at the Annual General Meeting, usually each October. They meet once a month, together with the School Director, to discuss ideas and make decisions.</p>
-        <p>The presence of a functioning Parent Board makes New Jersey Preschool a unique pre-school with the children’s interests always remaining the top priority!</p>
+        <div class="section-title text-center mb-5">
+            <h3>Preschool Board of Parents</h3>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <p>The New Jersey Preschool Board of Parents is an active body of elected parent representatives who make key policy decisions and help organize events and activities.</p>
+                <p>Board members meet monthly to ensure the children's interests remain the top priority, contributing to a strong community culture in the preschool.</p>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <img src="https://via.placeholder.com/1200x400" alt="Preschool Board Image" class="section-img">
+            </div>
+        </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
 
         <!-- Start Newsletter Area -->
         <div class="newsletter-area ptb-100">

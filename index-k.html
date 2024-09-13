@@ -36,11 +36,56 @@
 
 <!-- Bootstrap Icons -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
-
+<link href='https://fonts.googleapis.com/css?family=Martel+Sans:400,200,300,600,700,800,900|Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
 
     <body>
         
+<!-- WhatsApp Icon -->
+<div id="whatsapp-widget">
+    <a href="https://wa.me/917337509737" target="_blank" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  
+  <!-- Social Media Widget -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('social-toggle').addEventListener('click', function() {
+          const socialIcons = document.querySelectorAll('#social-media-widget .social-icon:not(#social-toggle)');
+          socialIcons.forEach(icon => {
+              if (icon.style.display === 'none' || icon.style.display === '') {
+                  icon.style.display = 'flex';
+              } else {
+                  icon.style.display = 'none';
+              }
+          });
+      });
+  });
+  
+  </script>
+  <!-- Social Media Widget -->
+  <div id="social-media-widget">
+    <div id="social-toggle" class="social-icon">
+        <i class="fas fa-link"></i>
+        <!-- <i class="fas fa-hand-pointer-o"></i> -->
+        <!-- <img src="images/logo/social-media-icon.png" alt="Social Icon" class="social-img"> -->
+    </div>
+    <a href="https://m.facebook.com/" target="_blank" class="social-icon facebook" style="display:none;">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <!-- <a href="#" class="social-icon twitter" style="display:none;">
+        <i class="fab fa-twitter"></i>
+    </a> -->
+    <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram" style="display:none;">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://m.youtube.com/" target="_blank" class="social-icon linkedin" style="display:none;">
+        <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+
         <!-- Start Preloader Area -->
         <div class="preloader">
             <div class="loader">
@@ -61,8 +106,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="index-k.html">
-                                <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" style="width: 55px;">
-                                <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" style="width: 55px;">
+                                <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" >
+                                <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" >
                             </a>
                         </div>
                     </div>
@@ -73,8 +118,8 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index-k.html">
-                            <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" Style="max-width: 150px;height: auto;">
-                            <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" Style="max-width: 150px;height: auto;">
+                            <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" Style="max-width: 200px;height: auto;">
+                            <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" Style="max-width: 200px;height: auto;">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">

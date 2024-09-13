@@ -30,11 +30,56 @@
         <!-- Responsive CSS -->
 		<link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="icon" type="image/png" href="assets/img/koodo-logo.png">
-
+        <link href='https://fonts.googleapis.com/css?family=Martel+Sans:400,200,300,600,700,800,900|Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
 
     <body>
         
+<!-- WhatsApp Icon -->
+<div id="whatsapp-widget">
+    <a href="https://wa.me/917337509737" target="_blank" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  
+  <!-- Social Media Widget -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('social-toggle').addEventListener('click', function() {
+          const socialIcons = document.querySelectorAll('#social-media-widget .social-icon:not(#social-toggle)');
+          socialIcons.forEach(icon => {
+              if (icon.style.display === 'none' || icon.style.display === '') {
+                  icon.style.display = 'flex';
+              } else {
+                  icon.style.display = 'none';
+              }
+          });
+      });
+  });
+  
+  </script>
+  <!-- Social Media Widget -->
+  <div id="social-media-widget">
+    <div id="social-toggle" class="social-icon">
+        <i class="fas fa-link"></i>
+        <!-- <i class="fas fa-hand-pointer-o"></i> -->
+        <!-- <img src="images/logo/social-media-icon.png" alt="Social Icon" class="social-img"> -->
+    </div>
+    <a href="https://m.facebook.com/" target="_blank" class="social-icon facebook" style="display:none;">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <!-- <a href="#" class="social-icon twitter" style="display:none;">
+        <i class="fab fa-twitter"></i>
+    </a> -->
+    <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram" style="display:none;">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://m.youtube.com/" target="_blank" class="social-icon linkedin" style="display:none;">
+        <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+
         <!-- Start Preloader Area -->
         <div class="preloader">
             <div class="loader">
@@ -55,8 +100,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="index-k.html">
-                                <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" style="width: 55px;">
-                                <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" style="width: 55px;">
+                                <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" >
+                                <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" >
                             </a>
                         </div>
                     </div>
@@ -67,8 +112,8 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index-k.html">
-                            <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" Style="max-width: 150px;height: auto;">
-                            <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" Style="max-width: 150px;height: auto;">
+                            <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" Style="max-width: 200px;height: auto;">
+                            <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" Style="max-width: 200px;height: auto;">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -118,7 +163,7 @@
                 </div>
             </div>
 
-            <div class="others-option-for-responsive">
+            <!-- <div class="others-option-for-responsive">
                 <div class="container">
                     <div class="dot-menu">
                         <div class="inner">
@@ -128,7 +173,7 @@
                         </div>
                     </div>
                     
-                    <!-- <div class="container">
+                    <div class="container">
                         <div class="option-inner">
                             <div class="others-options d-flex align-items-center">
                                 <div class="option-item">
@@ -136,35 +181,58 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- End Navbar Area -->
 
         <!-- Start Page Banner -->
-        <div class="page-banner-area item-bg1">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="container">
-                        <div class="page-banner-content">
-                            <h2>Events</h2>
-                            <ul>
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>Events</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <style>
+            /* Banner Section */
+            .banner {
+                 background: url('assets/img/page-banner-5.jpg') no-repeat center center/cover;
+                 height: 350px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 color: #fff;
+                 text-align: center;
+                 position: relative;
+                 font-family: 'Poppins', sans-serif;
+             }
+             .banner h1 {
+                 font-size: 3rem;
+                 text-transform: uppercase;
+                 animation: fadeInDown 1.5s ease-in-out;
+                 color: #fff;
+             }
+             .overlay {
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 height: 100%;
+                 background: rgba(0, 0, 0, 0.5);
+                 z-index: 1;
+             }
+             .banner h1 {
+                 z-index: 2;
+                 font-family: 'Poppins', sans-serif;
+             }
+         </style>
+     
+     <!-- Banner Section -->
+     <section class="banner">
+         <div class="overlay"></div>
+         <h1 class="animate__animated animate__fadeInDown">Events</h1>
+     </section>
         <!-- End Page Banner -->
 
         <!-- Start Gallery Area -->
         <div class="gallery-area pt-100 pb-70">
             <div class="container">
+                <h2 class="text-center mb-5">Upcoming Events</h2>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-gallery-box">
@@ -195,7 +263,9 @@
                             </a>
                         </div>
                     </div>
-
+                    </div>
+                    <h2 class="text-center mb-5">Past Events</h2>
+                    <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-gallery-box">
                             <img src="assets/img/gallery/gallery-4.jpg" alt="image">
@@ -225,10 +295,6 @@
                             </a>
                         </div>
                     </div>
-                </div>
-
-                <div class="view-btn">
-                    <a href="#" class="default-btn">View More</a>
                 </div>
             </div>
         </div>

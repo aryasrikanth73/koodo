@@ -30,10 +30,55 @@
         <!-- Responsive CSS -->
 		<link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="icon" type="image/png" href="assets/img/koodo-logo.png">
-
+        <link href='https://fonts.googleapis.com/css?family=Martel+Sans:400,200,300,600,700,800,900|Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
 
     <body>
+        <!-- WhatsApp Icon -->
+        <div id="whatsapp-widget">
+            <a href="https://wa.me/917337509737" target="_blank" class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          
+          <!-- Social Media Widget -->
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              document.getElementById('social-toggle').addEventListener('click', function() {
+                  const socialIcons = document.querySelectorAll('#social-media-widget .social-icon:not(#social-toggle)');
+                  socialIcons.forEach(icon => {
+                      if (icon.style.display === 'none' || icon.style.display === '') {
+                          icon.style.display = 'flex';
+                      } else {
+                          icon.style.display = 'none';
+                      }
+                  });
+              });
+          });
+          
+          </script>
+          <!-- Social Media Widget -->
+          <div id="social-media-widget">
+            <div id="social-toggle" class="social-icon">
+                <i class="fas fa-link"></i>
+                <!-- <i class="fas fa-hand-pointer-o"></i> -->
+                <!-- <img src="images/logo/social-media-icon.png" alt="Social Icon" class="social-img"> -->
+            </div>
+            <a href="https://m.facebook.com/" target="_blank" class="social-icon facebook" style="display:none;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- <a href="#" class="social-icon twitter" style="display:none;">
+                <i class="fab fa-twitter"></i>
+            </a> -->
+            <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram" style="display:none;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://m.youtube.com/" target="_blank" class="social-icon linkedin" style="display:none;">
+                <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        
         
         <!-- Start Preloader Area -->
         <div class="preloader">
@@ -55,8 +100,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="index-k.html">
-                                <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" style="width: 55px;">
-                                <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" style="width: 55px;">
+                                <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" >
+                                <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" >
                             </a>
                         </div>
                     </div>
@@ -67,8 +112,8 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index-k.html">
-                            <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" Style="max-width: 150px;height: auto;">
-                            <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" Style="max-width: 150px;height: auto;">
+                            <img src="assets/img/koodo-logo.png" class="black-logo" alt="image" Style="max-width: 200px;height: auto;">
+                            <img src="assets/img/koodo-logo.png" class="white-logo" alt="image" Style="max-width: 200px;height: auto;">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -118,7 +163,7 @@
                 </div>
             </div>
 
-            <div class="others-option-for-responsive">
+            <!-- <div class="others-option-for-responsive">
                 <div class="container">
                     <div class="dot-menu">
                         <div class="inner">
@@ -128,7 +173,7 @@
                         </div>
                     </div>
                     
-                    <!-- <div class="container">
+                    <div class="container">
                         <div class="option-inner">
                             <div class="others-options d-flex align-items-center">
                                 <div class="option-item">
@@ -136,30 +181,52 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- End Navbar Area -->
 
         <!-- Start Page Banner -->
-        <div class="page-banner-area">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="container">
-                        <div class="page-banner-content">
-                            <h2>Contact</h2>
-                            <ul>
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>Contact</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <style>
+            /* Banner Section */
+            .banner {
+                 background: url('assets/img/page-banner-5.jpg') no-repeat center center/cover;
+                 height: 350px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 color: #fff;
+                 text-align: center;
+                 position: relative;
+                 font-family: 'Poppins', sans-serif;
+             }
+             .banner h1 {
+                 font-size: 3rem;
+                 text-transform: uppercase;
+                 animation: fadeInDown 1.5s ease-in-out;
+                 color: #fff;
+             }
+             .overlay {
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 height: 100%;
+                 background: rgba(0, 0, 0, 0.5);
+                 z-index: 1;
+             }
+             .banner h1 {
+                 z-index: 2;
+                 font-family: 'Poppins', sans-serif;
+             }
+         </style>
+     
+     <!-- Banner Section -->
+     <section class="banner">
+         <div class="overlay"></div>
+         <h1 class="animate__animated animate__fadeInDown">Contact US</h1>
+     </section>
         <!-- End Page Banner -->
 
         <!-- Start Contact Area -->
@@ -170,7 +237,7 @@
                         <div class="contact-form">
                             <h3>Ready to Get Started?</h3>
 
-                            <form id="contactForm" action="process.php" method="post" >
+                            <form id="contactForm">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-6">
                                         <div class="form-group">
@@ -178,39 +245,35 @@
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
-
+                        
                                     <div class="col-lg-12 col-md-6">
                                         <div class="form-group">
-                                            <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Your email address">
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Your email address">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
-
+                        
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="phone_number" id="phone_number" class="form-control" required data-error="Please enter your phone number" placeholder="Your phone number">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
-
+                        
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="subjects" id="subjects" class="form-control" required data-error="Please enter your subjects" placeholder="Subjects">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
-
+                        
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <textarea name="message" id="message" cols="30" rows="5" required data-error="Please enter your message" class="form-control" placeholder="Write your message..."></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
-									<!-- <div class="form-group">
-									 <img src="captcha.php" alt="captcha image"  style="width: 80px;margin-bottom: 12px;">
-								<input type="text" name="captcha" placeholder="Enter Total" style="width:150px;">
-							  </div> -->
-
+                        
                                     <div class="col-lg-12 col-md-12">
                                         <button type="submit" class="default-btn">Send Message</button>
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
@@ -218,6 +281,31 @@
                                     </div>
                                 </div>
                             </form>
+                        
+                            <script>
+                                document.getElementById('contactForm').addEventListener('submit', function(event) {
+                                    event.preventDefault(); // Prevent the default form submission
+                                    
+                                    // Retrieve form data
+                                    var name = document.getElementById('name').value;
+                                    var email = document.getElementById('email').value;
+                                    var phone = document.getElementById('phone_number').value; // Use the correct ID for phone
+                                    var subject = document.getElementById('subjects').value; // Use the correct ID for subject
+                                    var message = document.getElementById('message').value;
+                                    
+                                    // WhatsApp contact number
+                                    var whatsappNumber = '917337509737';
+                                    
+                                    // Format the message with line breaks
+                                    var formattedMessage = `Hi👋🏻 *Koodo Pre School,*\nMy details are mentioned below. Call📞 me back.\n*Name:* ${name},\n*Email:* ${email},\n*Phone:* ${phone},\n*Subject:* ${subject},\n*Message:* ${message}`;
+                                    
+                                    // Create the WhatsApp URL
+                                    var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(formattedMessage)}`;
+                                    
+                                    // Open WhatsApp
+                                    window.open(whatsappURL, '_blank');
+                                });
+                            </script>
                         </div>
                     </div>
 
