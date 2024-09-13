@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>New Jersey Pre School Opening The Wings For Future</title>
+        <title> KOODO NURSERY SCHOOL Opening The Wings For Future</title>
         <!-- Bootstrap CSS --> 
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- Animate CSS --> 
@@ -185,6 +185,71 @@
 
         <!-- Start Page Banner -->
         <style>
+            .section-heading {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .franchise-benefits p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .benefits-points {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .benefits-points .row {
+            margin-bottom: 1.5rem;
+        }
+
+        .benefits-points i {
+            font-size: 1.2rem;
+            margin-right: 10px;
+            color: #045eab;
+        }
+
+        /* Why Choose Cards */
+        .card {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Franchise Requirements */
+        .franchise-box {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .franchise-box:hover {
+            background: #e9ecef;
+        }
+
+        .franchise-box img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .section-heading {
+                font-size: 2rem;
+            }
+        }
             /* Banner Section */
             .banner {
                  background: url('assets/img/page-banner-5.jpg') no-repeat center center/cover;
@@ -223,98 +288,112 @@
          <div class="overlay"></div>
          <h1 class="animate__animated animate__fadeInDown">Franchise</h1>
      </section>
-        <!-- End Page Banner -->
 
-        <!-- Start Contact Area -->
-        <section class="contact-area ptb-100">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-12">
-                        <div class="contact-form">
-                            <h3>Ready to Get Started?</h3>
+     
+<!-- Franchise Benefits Section with Image on Left and Pointers on Right -->
+<section id="franchise-benefits" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-heading" data-aos="fade-right">Why Partner with Koodo?</h2>
+        <div class="row align-items-center">
+            <!-- Image Column -->
+            <div class="col-md-6" data-aos="fade-right">
+                <img src="https://via.placeholder.com/600x400" alt="Koodo Partnership" class="img-fluid">
+            </div>
+            
+            <!-- Points Column -->
+            <div class="col-md-6" data-aos="fade-left">
+                <p>Koodo Pre-School is a renowned institution known for providing high-quality education for young children. Partnering with Koodo will provide you with the tools, training, and support needed to succeed in this growing market. Here’s what we offer:</p>
+                
+                <div class="row benefits-points">
+                    <!-- Left 4 Points -->
+                    <div class="col-md-6">
+                        <p><i class="fas fa-check-circle"></i> Full training and support</p>
+                        <p><i class="fas fa-check-circle"></i> Proven business model</p>
+                        <p><i class="fas fa-check-circle"></i> Established curriculum</p>
+                        <p><i class="fas fa-check-circle"></i> Marketing assistance</p>
+                    </div>
+                    
+                    <!-- Right 4 Points -->
+                    <div class="col-md-6">
+                        <p><i class="fas fa-check-circle"></i> Brand recognition</p>
+                        <p><i class="fas fa-check-circle"></i> Operational support</p>
+                        <p><i class="fas fa-check-circle"></i> Access to technology tools</p>
+                        <p><i class="fas fa-check-circle"></i> Growth opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                            <form id="contactForm" action="process.php" method="post" >
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Your name">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-lg-12 col-md-6">
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Your email address">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" name="phone_number" id="phone_number" class="form-control" required data-error="Please enter your phone number" placeholder="Your phone number">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" name="subjects" id="subjects" class="form-control" required data-error="Please enter your subjects" placeholder="Subjects">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" cols="30" rows="5" required data-error="Please enter your message" class="form-control" placeholder="Write your message..."></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-									<!-- <div class="form-group">
-									 <img src="captcha.php" alt="captcha image"  style="width: 80px;margin-bottom: 12px;">
-								<input type="text" name="captcha" placeholder="Enter Total" style="width:150px;">
-							  </div> -->
-
-                                    <div class="col-lg-12 col-md-12">
-                                        <button type="submit" class="default-btn">Send Message</button>
-                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </form>
+    <!-- Why Choose Koodo Section -->
+    <section id="why-koodo" class="py-5">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">Why Choose Koodo Pre-School Franchise?</h2>
+            <p class="text-center" data-aos="fade-up">Our pre-school franchise offers numerous advantages that set us apart from the competition. Here’s why:</p>
+            <div class="row">
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/500x350" alt="Top-Notch Education" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Top-Notch Education</h3>
+                            <p>We focus on holistic development of children using our award-winning curriculum that includes social, emotional, cognitive, and physical growth.</p>
                         </div>
                     </div>
-
-                    <div class="col-lg-5 col-md-12">
-                        <div class="contact-information">
-                            <h3>Here to Help</h3>
-
-                            <ul class="contact-list">
-                                <li><i class='bx bx-map'></i> Location: <span>Regus Business Center SLN Terminus, Hi-tech City Kondapur, Hyderabad - 500038</span></li>
-                                <li><i class='bx bx-phone-call'></i> Call Us: <a href="tel:+917337509737">+91 7337509737</a></li>
-                                <li><i class='bx bx-envelope'></i> Email Us: <a href="mailto:franchise@newjerseypreschool.com"><span class="__cf_email__">franchise@newjerseypreschool.com</span></a></li>
-                                <li><i class='bx bx-microphone'></i> Telephone: <a href="tel:+919415894075">+91 9415894075</a></li>
-                            </ul>
-
-                            <h3>Opening Hours:</h3>
-                            <ul class="opening-hours">
-                                <li><span>Monday:</span> 9AM - 3AM</li>
-                                <li><span>Tuesday:</span> 9AM - 3AM</li>
-                                <li><span>Wednesday:</span> 9AM - 3AM</li>
-                                <li><span>Thursday:</span> 9AM - 3AM</li>
-                                <li><span>Friday:</span> 9AM - 3AM</li>
-                            </ul>
+                </div>
+                <div class="col-md-4" data-aos="flip-right">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/500x350" alt="Proven Business Model" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Proven Business Model</h3>
+                            <p>Our franchisees have achieved great success using our proven model, providing consistent returns and sustainable growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/500x350" alt="Growing Market" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Growing Market</h3>
+                            <p>The pre-school market is expanding rapidly, and with Koodo, you're poised for success by entering a booming sector with high demand.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End Contact Area -->
-
-        <!-- Map -->
-        <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.151202574466!2d78.36076047516639!3d17.452475683445854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c70ea2d691%3A0x4de16a16601f1a8!2sRegus%20-%20Hyderabad%2C%20SLN%20Terminus!5e0!3m2!1sen!2sin!4v1717130550727!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <!-- End Map -->
+    </section>
+
+    <!-- Franchise Requirements Section -->
+    <section id="requirements" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">Franchise Requirements</h2>
+            <p class="text-center" data-aos="fade-up">Here are the basic requirements to start your own Koodo Pre-School:</p>
+            <div class="row">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="franchise-box">
+                        <img src="https://via.placeholder.com/500x350" alt="Investment" class="img-fluid">
+                        <h4>Investment</h4>
+                        <p>Minimum initial investment of $50,000. This ensures you have the necessary financial foundation to start and grow your business.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="franchise-box">
+                        <img src="https://via.placeholder.com/500x350" alt="Space" class="img-fluid">
+                        <h4>Space</h4>
+                        <p>A facility with at least 2,500 square feet is required to accommodate the learning spaces and recreational areas for children.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="franchise-box">
+                        <img src="https://via.placeholder.com/500x350" alt="Passion" class="img-fluid">
+                        <h4>Passion</h4>
+                        <p>A passion for education and working with young children is a must. Dedication to shaping the next generation is at the core of our mission.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
  <!-- Start Footer Area -->
         <section class="footer-area pt-100 pb-70">
@@ -432,7 +511,7 @@
             <div class="container">
                 <div class="copyright-area-content">
                     <p>
-                       Copyright ©2024 <strong>NEW JERSEY PRE SCHOOL</strong> - All Rights Reserved. Designed by <a href="https://ppftechnologies.com/" target="_blank" style="color:#fff"> <strong style="text-indent:200px;color:#fff"> PPF TECHNOLOGIES - HYDERABAD</strong></a>
+                       Copyright ©2024 <strong> KOODO NURSERY SCHOOL</strong> - All Rights Reserved. Designed by <a href="https://ppftechnologies.com/" target="_blank" style="color:#fff"> <strong style="text-indent:200px;color:#fff"> PPFW WEB DEVELOPERS - HYDERABAD</strong></a>
                     </p>
                 </div>
             </div>
@@ -476,5 +555,13 @@
         <script src="assets/js/contact-form-script.js"></script>
         <!-- Custom JS -->
         <script src="assets/js/main.js"></script>
+
+        <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     </body>
 </html>

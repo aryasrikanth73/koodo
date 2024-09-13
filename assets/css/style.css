@@ -1451,6 +1451,7 @@ Main Banner Area CSS
 .home-slides.owl-theme .owl-nav [class*=owl-].owl-next {
   left: auto;
   right: 20px;
+  /* bottom: 50px; */
 }
 
 .home-slides.owl-theme .owl-nav [class*=owl-]:hover {
@@ -6181,9 +6182,9 @@ Go Top CSS
   color: #ffffff;
   background-color: #1b0238;
   z-index: 4;
-  width: 35px;
+  width: 50px;
   text-align: center;
-  height: 35px;
+  height: 50px;
   opacity: 0;
   visibility: hidden;
   border-radius: 50%;
@@ -6208,7 +6209,8 @@ Go Top CSS
 .go-top.active {
   opacity: 1;
   visibility: visible;
-  bottom: 60px;
+  bottom: 40px;
+  right: 25px;
 }
 
 .go-top:hover {
